@@ -16,6 +16,7 @@ class CustomInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('entre al custom_input.dart!!!!!!!!');
     return Container(
       padding: EdgeInsets.only(top: 5, left: 5, bottom: 5, right: 20),
       margin: EdgeInsets.only(bottom: 20),

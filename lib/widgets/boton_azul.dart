@@ -4,7 +4,9 @@ class BotonAzul extends StatelessWidget {
   final String text;
   final Function onPressed;
 
-  const BotonAzul({required this.text, required this.onPressed});
+  const BotonAzul(
+      {required Key key, required this.text, required this.onPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +15,7 @@ class BotonAzul extends StatelessWidget {
       highlightElevation: 5,
       color: Colors.blue,
       shape: StadiumBorder(),
-      //onPressed: this.onPressed,
-      onPressed: () {},
+      onPressed: () => onPressed,
       child: Container(
         width: double.infinity,
         height: 55,
